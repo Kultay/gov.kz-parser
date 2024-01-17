@@ -39,8 +39,8 @@ items_dict = {}
 
 for i in range(len(items)):
     if items[i]['supervisor'] != None:
-        items_dict[items[i]['id']] = [items[i]['id'],
-                                      items[i]['project_name'],
+        items_dict[items[i]['project_name']] = [items[i]['project_name'],
+                                      items[i]['id'],
                                       items[i]['supervisor']['lastname_initials'],
                                       items[i]['supervisor']['name'],
                                       items[i]['supervisor']['lastname'],
@@ -48,12 +48,14 @@ for i in range(len(items)):
                                       items[i]['supervisor']['position'],
                                       items[i]['supervisor']['phone'],
                                       items[i]['supervisor']['email']]
+
+
     else:
         pass
 
 items_arr1 = list(items_dict.values())
 print(items_arr1)
-header = ['id', 'Project_name', 'Lastname_initials', 'Name', 'Lastname', 'Middlename', 'Position', 'Phone', 'Email']
+header = ['Project_name', 'id', 'Lastname_initials', 'Name', 'Lastname', 'Middlename', 'Position', 'Phone', 'Email']
 
 with open("stuff.csv", "w", newline='', encoding='utf-8') as f:
     w = csv.writer(f, delimiter="|")
@@ -66,6 +68,17 @@ with open("stuff.csv", "w", newline='', encoding='utf-8') as f:
 
 
 
+    for name in names:
+        for i in range(len(names)):
+            if name['id'] == names[i]['id']:
+                if l == 'en':
+                    name['project_name_en'] = name.pop('project_name')
+                elif l == 'ru':
+                    name['project_name_ru'] = name.pop('project_name')
+                else:
+                    name['project_name_kk'] = name.pop('project_name')
+    items.append(names)
 
+print(items)
 
 
