@@ -68,17 +68,6 @@ with open("stuff.csv", "w", newline='', encoding='utf-8') as f:
 
 
 
-    for name in names:
-        for i in range(len(names)):
-            if name['id'] == names[i]['id']:
-                if l == 'en':
-                    name['project_name_en'] = name.pop('project_name')
-                elif l == 'ru':
-                    name['project_name_ru'] = name.pop('project_name')
-                else:
-                    name['project_name_kk'] = name.pop('project_name')
-    items.append(names)
 
-print(items)
 
 
