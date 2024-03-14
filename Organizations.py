@@ -25,7 +25,7 @@ def clean_text(text):
 # Remove symbol function
 def remove_symbol(text):
     if text is not None:
-        cleaned_text = re.sub('[^a-zA-Zа-яА-ЯәғқңөұүhіӘҒҚҢӨҰҮҺІ0-9,.()-/@:; ]', '', text)
+        cleaned_text = re.sub('[^a-zA-Zа-яА-ЯәғқңөұүhіӘҒҚҢӨҰҮҺІ0-9,.()-/@:;!№#$%&?*= ]', '', text)
         return cleaned_text
     else:
         return None
