@@ -104,7 +104,7 @@ for l in languages:
 
 items_arr = list(items_dict.values())
 
-header = ['id', 'Parent_id','Order','Project_name_en', 'Project_name_kk', 'Project_name_ru',  'class_name_en','class_name_kk' ,'class_name_ru',
+header = ['id', 'Parent_id','Project_name_en', 'Project_name_kk', 'Project_name_ru',  'class_name_en','class_name_kk' ,'class_name_ru',
            'phone','project_website' ,'project_describtion','contacts_ru']
 
 with open("Organizations.csv", "w", newline='', encoding='utf-8') as f:

@@ -110,7 +110,7 @@ for l in languages:
 
 items_arr = list(items_dict.values())
 
-header = ['Projects_id','Supervisors_id' , 'Lastname_initials', 'lastname', 'Name',
+header = ['Projects_id','Supervisors_id' ,'Order','Lastname_initials', 'lastname', 'Name',
           'Middlename', 'Position', 'Phone', 'Email','Biography', 'biography_details']
 
 with open("supervisors.csv", "w", newline='', encoding='utf-8') as f:

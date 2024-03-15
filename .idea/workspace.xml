@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04d8400d-6e75-4bd1-bad9-719963310a84" name="Changes" comment="Initial Commit">
-      <change afterPath="$PROJECT_DIR$/Supervisor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Organizations.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Organizations.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Organizations.py" beforeDir="false" afterPath="$PROJECT_DIR$/Organizations.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Supervisors.py" beforeDir="false" afterPath="$PROJECT_DIR$/Supervisors.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/supervisors.csv" beforeDir="false" afterPath="$PROJECT_DIR$/supervisors.csv" afterDir="false" />
-    </list>
+    <list default="true" id="04d8400d-6e75-4bd1-bad9-719963310a84" name="Changes" comment="Initial Commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -219,7 +212,7 @@
       <workItem from="1706583525444" duration="1296000" />
       <workItem from="1710389894785" duration="34000" />
       <workItem from="1710390152092" duration="27097000" />
-      <workItem from="1710475848718" duration="23038000" />
+      <workItem from="1710475848718" duration="23417000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -301,7 +294,55 @@
       <option name="project" value="LOCAL" />
       <updated>1710417130847</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Initial Commit">
+      <option name="closed" value="true" />
+      <created>1710507435128</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1710507435128</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Initial Commit">
+      <option name="closed" value="true" />
+      <created>1710507454947</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1710507454947</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Initial Commit">
+      <option name="closed" value="true" />
+      <created>1710507523688</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1710507523688</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Initial Commit">
+      <option name="closed" value="true" />
+      <created>1710507537559</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1710507537559</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Initial Commit">
+      <option name="closed" value="true" />
+      <created>1710507559234</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1710507559234</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Initial Commit">
+      <option name="closed" value="true" />
+      <created>1710507570252</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1710507570252</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
