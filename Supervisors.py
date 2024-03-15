@@ -10,6 +10,7 @@ languages = ['en', 'kk', 'ru']
 
 items_dict = {}
 
+
 # Clean text function
 def clean_text(text):
     if text is not None:
@@ -22,13 +23,15 @@ def clean_text(text):
     else:
         return ""
 
+
 # Remove symbol function
 def remove_symbol(text):
     if text is not None:
-        cleaned_text = re.sub('[^a-zA-Zа-яА-ЯәғқңөұүhіӘҒҚҢӨҰҮҺІ0-9,.()-/@:;!№#$%&?*= ]', '', text)
+        cleaned_text = re.sub('[^a-zA-Zа-яА-ЯәғқңөұүhіӘҒҚҢӨҰҮҺІ0-9,.()-/@:;!№#$%&?*=_ ]', '', text)
         return cleaned_text
     else:
         return None
+
 
 # Request of Postman
 for l in languages:
@@ -39,8 +42,9 @@ for l in languages:
     {
       projectdetails (_size:>0){
         id
-        project_name 
-        supervisor {
+        supervisors {
+          id
+          order
           lastname_initials
           lastname
           name
@@ -48,8 +52,11 @@ for l in languages:
           position
           phone
           email
+          social_media{
+          link}
           biography
           biography_details
+
         }
       }
     }
@@ -59,64 +66,52 @@ for l in languages:
     organizations = data['data']['projectdetails']
 
     for i in organizations:
-        project_id = i['id']
+        for supervisors in i['supervisors']:
+            supervisors_id = supervisors['id']
 
-        # Replace with zero
-        if i['supervisor'] is None:
-            i['supervisor'] = {"lastname_initials": "0", "lastname": "0", "name": "0", "middlename": "0",
-                               "position": "0", "phone": "0", "email": "0", "biography": "0", "biography_details": "0"}
+            # Replace with zero
+            if supervisors is not None:
+                i['supervisors'] = {"order": "0", "lastname_initials": "0", "lastname": "0", "name": "0", "middlename": "0",
+                                    "position": "0", "phone": "0", "email": "0", "biography": "0", "biography_details": "0"}
 
-        # Clean text
-        i['supervisor']['biography'] = clean_text(i['supervisor']['biography'])
-        i['supervisor']['biography_details'] = clean_text(i['supervisor']['biography_details'])
+            # Clean text
+            supervisors['order'] = str(supervisors['order'])
+            supervisors['biography'] = clean_text(supervisors['biography']).strip()
+            supervisors['biography_details'] = clean_text(supervisors['biography_details']).strip()
 
-        #Remove symbol
-        i['project_name'] = remove_symbol(i['project_name'])
-        i['supervisor']['lastname_initials'] = remove_symbol(i['supervisor']['lastname_initials'])
-        i['supervisor']['lastname'] = remove_symbol(i['supervisor']['lastname'])
-        i['supervisor']['name'] = remove_symbol(i['supervisor']['name'])
-        i['supervisor']['middlename'] = remove_symbol(i['supervisor']['middlename'])
-        i['supervisor']['position'] = remove_symbol(i['supervisor']['position'])
-        i['supervisor']['phone'] = remove_symbol(i['supervisor']['phone'])
-        i['supervisor']['email'] = remove_symbol(i['supervisor']['email'])
-        i['supervisor']['biography'] = remove_symbol(i['supervisor']['biography'])
-        i['supervisor']['biography_details'] = remove_symbol(i['supervisor']['biography_details'])
+            # Remove symbol
+            supervisors['lastname_initials'] = remove_symbol(supervisors['lastname_initials'])
+            supervisors['lastname'] = remove_symbol(supervisors['lastname'])
+            supervisors['name'] = remove_symbol(supervisors['name'])
+            supervisors['middlename'] = remove_symbol(supervisors['middlename'])
+            supervisors['position'] = remove_symbol(supervisors['position'])
+            supervisors['phone'] = remove_symbol(supervisors['phone'])
+            supervisors['email'] = remove_symbol(supervisors['email'])
+            supervisors['biography'] = remove_symbol(supervisors['biography'])
+            supervisors['biography_details'] = remove_symbol(supervisors['biography_details'])
 
-        # Fill out the dictionary in different languages
-        if project_id not in items_dict:
-            items_dict[project_id] = [
-                project_id,
-                i['project_name'] if l == 'en' else None,
-                i['project_name'] if l == 'kk' else None,
-                i['project_name'] if l == 'ru' else None,
-                i['supervisor']['lastname_initials'] if l == 'ru' else None,
-                i['supervisor']['lastname'] if l == 'ru' else None,
-                i['supervisor']['name'] if l == 'ru' else None,
-                i['supervisor']['middlename'] if l == 'ru' else None,
-                i['supervisor']['position'] if l == 'ru' else None,
-                i['supervisor']['phone'],
-                i['supervisor']['email'],
-                i['supervisor']['biography'] if l == 'ru' else None,
-                i['supervisor']['biography_details'] if l == 'ru' else None
-            ]
-        else:
-            items_dict[project_id][1 + languages.index(l)] = i['project_name']
-            items_dict[project_id][2 + languages.index(l)] = i['supervisor']['lastname_initials']
-            items_dict[project_id][3 + languages.index(l)] = i['supervisor']['lastname']
-            items_dict[project_id][4 + languages.index(l)] = i['supervisor']['name']
-            items_dict[project_id][5 + languages.index(l)] = i['supervisor']['middlename']
-            items_dict[project_id][6 + languages.index(l)] = i['supervisor']['position']
-            items_dict[project_id][7 + languages.index(l)] = i['supervisor']['phone']
-            items_dict[project_id][8 + languages.index(l)] = i['supervisor']['email']
-            items_dict[project_id][9 + languages.index(l)] = i['supervisor']['biography']
-            items_dict[project_id][10 + languages.index(l)] = i['supervisor']['biography_details']
-            items_dict[project_id][9 + languages.index(l)] = clean_text(i['supervisor']['biography'])
-            items_dict[project_id][10 + languages.index(l)] = clean_text(i['supervisor']['biography_details'])
+            # Fill out the dictionary in different languages
+            if supervisors_id is not items_dict:
+                items_dict[supervisors_id] = [
+                    i['id'],
+                    supervisors_id,
+                    supervisors['order'] ,
+                    supervisors['lastname_initials'] if l == 'ru' else None,
+                    supervisors['lastname'] if l == 'ru' else None,
+                    supervisors['name'] if l == 'ru' else None,
+                    supervisors['middlename'] if l == 'ru' else None,
+                    supervisors['position'] if l == 'ru' else None,
+                    supervisors['phone'],
+                    supervisors['email'],
+                    supervisors['biography'] if l == 'ru' else None,
+                    supervisors['biography_details'] if l == 'ru' else None,
+                ]
+
 
 items_arr = list(items_dict.values())
 
-header = ['id', 'Project_name_en', 'Project_name_kk', 'Project_name_ru', 'Lastname_initials', 'lastname', 'Name',
-          'Middlename', 'Position', 'Phone', 'Email', 'Biography', 'biography_details']
+header = ['Projects_id','Supervisors_id' , 'Lastname_initials', 'lastname', 'Name',
+          'Middlename', 'Position', 'Phone', 'Email','Biography', 'biography_details']
 
 with open("supervisors.csv", "w", newline='', encoding='utf-8') as f:
     w = csv.writer(f, delimiter=",")

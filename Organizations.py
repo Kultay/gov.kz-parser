@@ -25,7 +25,7 @@ def clean_text(text):
 # Remove symbol function
 def remove_symbol(text):
     if text is not None:
-        cleaned_text = re.sub('[^a-zA-Zа-яА-ЯәғқңөұүhіӘҒҚҢӨҰҮҺІ0-9,.()-/@:;!№#$%&?*= ]', '', text)
+        cleaned_text = re.sub('[^a-zA-Zа-яА-ЯәғқңөұүhіӘҒҚҢӨҰҮҺІ0-9,.()-/@:;!№#$%&?*=_ ]', '', text)
         return cleaned_text
     else:
         return None
@@ -46,6 +46,8 @@ for l in languages:
             name}
         phone
         contacts
+        project_website
+        project_description
 
       }
     }
@@ -65,12 +67,15 @@ for l in languages:
 
         # Clean text
         i['contacts'] = clean_text(i['contacts'])
+        i['project_description'] = clean_text(i['project_description']).strip()
 
         # Remove symbol
         i['contacts'] = remove_symbol(i['contacts'])
         i['project_name'] = remove_symbol(i['project_name'])
         i['class']['name'] = remove_symbol(i['class']['name'])
         i['phone'] = remove_symbol(i['phone'])
+        i['project_website'] = remove_symbol(i['project_website'])
+        i['project_description'] = remove_symbol(i['project_description'])
 
         # Fill out the dictionary in different languages
         if project_id not in items_dict:
@@ -84,21 +89,25 @@ for l in languages:
                 i['class']['name'] if l == 'kk' else None,
                 i['class']['name'] if l == 'ru' else None,
                 i['phone'],
+                i['project_website'],
+                i['project_description'] if l == 'ru' else None,
                 i['contacts'] if l == 'ru' else None
             ]
         else:
             items_dict[project_id][2 + languages.index(l)] = i['project_name']
             items_dict[project_id][5 + languages.index(l)] = i['class']['name']
             items_dict[project_id][6 + languages.index(l)] = i['phone']
-            items_dict[project_id][7 + languages.index(l)] = i['contacts']
-            items_dict[project_id][7 + languages.index(l)] = clean_text(i['contacts'])
+            items_dict[project_id][7 + languages.index(l)] = i['project_website']
+            items_dict[project_id][8+  languages.index(l)] = i['project_description']
+            items_dict[project_id][9 + languages.index(l)] = i['contacts']
+            items_dict[project_id][9 + languages.index(l)] = clean_text(i['contacts'])
 
 items_arr = list(items_dict.values())
 
-header = ['id', 'Parent_id','Project_name_en', 'Project_name_kk', 'Project_name_ru',  'class_name_en','class_name_kk' ,'class_name_ru',
-           'phone', 'contacts_ru']
+header = ['id', 'Parent_id','Order','Project_name_en', 'Project_name_kk', 'Project_name_ru',  'class_name_en','class_name_kk' ,'class_name_ru',
+           'phone','project_website' ,'project_describtion','contacts_ru']
 
 with open("Organizations.csv", "w", newline='', encoding='utf-8') as f:
-    w = csv.writer(f, delimiter=",", )
+    w = csv.writer(f, delimiter=",")
     w.writerow(header)
     w.writerows(items_arr)
