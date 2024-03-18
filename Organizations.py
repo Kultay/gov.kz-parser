@@ -30,6 +30,13 @@ def remove_symbol(text):
     else:
         return None
 
+def remove_map_symbol(text):
+    if text is not None:
+        cleaned_text = re.sub('[^0-9.,]', '', text)
+        return cleaned_text
+    else:
+        return None
+
 # Request of Postman
 for l in languages:
     headers = {
@@ -48,6 +55,8 @@ for l in languages:
         contacts
         project_website
         project_description
+        map_point
+        slug
 
       }
     }
@@ -69,6 +78,7 @@ for l in languages:
         i['contacts'] = clean_text(i['contacts'])
         i['project_description'] = clean_text(i['project_description']).strip()
 
+
         # Remove symbol
         i['contacts'] = remove_symbol(i['contacts'])
         i['project_name'] = remove_symbol(i['project_name'])
@@ -76,6 +86,8 @@ for l in languages:
         i['phone'] = remove_symbol(i['phone'])
         i['project_website'] = remove_symbol(i['project_website'])
         i['project_description'] = remove_symbol(i['project_description'])
+        i['map_point'] = remove_map_symbol(i['map_point'])
+        i['slug'] = remove_symbol(i['slug'])
 
         # Fill out the dictionary in different languages
         if project_id not in items_dict:
@@ -91,7 +103,9 @@ for l in languages:
                 i['phone'],
                 i['project_website'],
                 i['project_description'] if l == 'ru' else None,
-                i['contacts'] if l == 'ru' else None
+                i['contacts'] if l == 'ru' else None,
+                i['map_point'],
+                i['slug']
             ]
         else:
             items_dict[project_id][2 + languages.index(l)] = i['project_name']
@@ -104,8 +118,8 @@ for l in languages:
 
 items_arr = list(items_dict.values())
 
-header = ['id', 'Parent_id','Project_name_en', 'Project_name_kk', 'Project_name_ru',  'class_name_en','class_name_kk' ,'class_name_ru',
-           'phone','project_website' ,'project_describtion','contacts_ru']
+header = ['id', 'Parent_id','Project_name_en', 'Project_name_kk', 'Project_name_ru',  'Class_name_en','Class_name_kk' ,'Class_name_ru',
+           'Phone','Project_website' ,'Project_describtion','Contacts', 'Map_point (lat, lon)', 'Slug(projects)']
 
 with open("Organizations.csv", "w", newline='', encoding='utf-8') as f:
     w = csv.writer(f, delimiter=",")
