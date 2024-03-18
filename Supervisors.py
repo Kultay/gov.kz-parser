@@ -52,8 +52,6 @@ for l in languages:
           position
           phone
           email
-          social_media{
-          link}
           biography
           biography_details
 
@@ -63,9 +61,9 @@ for l in languages:
     """
     r = requests.post(url=url, headers=headers, json={"query": body})
     data = json.loads(r.text)
-    organizations = data['data']['projectdetails']
+    supervisors = data['data']['projectdetails']
 
-    for i in organizations:
+    for i in supervisors:
         for supervisors in i['supervisors']:
             supervisors_id = supervisors['id']
 
