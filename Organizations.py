@@ -25,7 +25,7 @@ def clean_text(text):
 # Remove symbol function
 def remove_symbol(text):
     if text is not None:
-        cleaned_text = re.sub('[^a-zA-Zа-яА-ЯәғқңөұүhіӘҒҚҢӨҰҮҺІ0-9,.()-/@:;!№#$%&?*=_ ]', '', text)
+        cleaned_text = re.sub('[^a-zA-Zа-яА-ЯәғқңөұүhіӘҒҚҢӨҰҮҺІ0-9,.()-/@:;!№#$%&?*=_«» ]', '', text)
         return cleaned_text
     else:
         return None
@@ -70,13 +70,14 @@ for l in languages:
 
         # Replace with zero
         if i['class'] is None:
-            i['class'] = {"id": "0", "name": "0"}
+            i['class'] = {"id":"0", "name": "0"}
         if i['parent_govorg'] is None:
             i['parent_govorg'] = {"id": "0", "project_name": "0"}
 
         # Clean text
         i['contacts'] = clean_text(i['contacts'])
         i['project_description'] = clean_text(i['project_description']).strip()
+
 
 
         # Remove symbol
