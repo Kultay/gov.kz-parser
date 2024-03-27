@@ -21,7 +21,7 @@ id,projects(slug),title_en,title_kk,title_ru,external_link,internal_link
 277,shymkent-saulet, Back to the Akimat homepage, Әкімдіктің басты бетіне оралу, Вернуться на главную страницу Акимата,,/memleket/entities/shymkent
 545,astana-karzhy nur-sultan-uagz nur-sultan-bilim nur-sultan-uad astana-tildamytu nur-sultan-kurylys nur-sultan-saulet nur-rkastanagov nur-sultan-zhastar astana-udr astana-sport astana-ue astana-upr astana-uir astana-usbp astana-kkgs astana-urgsa astana-uvp astana-madeniet astana-uzsp astana-uoz astana-uzh astana-almaty astana-esil astana-saryarka astana-baikonyr, Return to the Akimat page, Әкімдіктің басты бетіне оралу, Вернуться на страницу Акимата,,/memleket/entities/astana
 283,shymkent-zhumys-aleumettik-korgau, Back to the Akimat homepage, Әкімдіктің басты бетіне оралу, Вернуться на главную страницу Акимата,,/memleket/entities/shymkent
-524,emer,Жедел ақпарат,Жедел ақпарат,Экстренная информация,,/memleket/entities/emer/press/article/details/161956
+524,emer,Жедел ақпарат,Жедел ақпарат,Экстренная информация,,/memleket/entities/emer/press/article/details/162791
 51,ksek, Back to the Ministrys page, Министрліктің бетіне оралу, Вернуться на страницу Министерства,,/memleket/entities/dsm
 56,stat, Back to the Agency page, Агенттік бетіне оралу, Вернуться на страницу Агенства,,/memleket/entities/aspr
 267,shymkent-bilim, Back to the Akimat homepage, Әкімдіктің басты бетіне оралу, Вернуться на страницу Акимата,,/memleket/entities/shymkent?lang=ru
@@ -417,7 +417,7 @@ id,projects(slug),title_en,title_kk,title_ru,external_link,internal_link
 2146,almobl almobl-balkhash almobl-enbekshikazah almobl-zhambyl almobl-ile almobl-karasay almobl-kegen almobl-raiymbek almobl-talgar almobl-uigur almobl-qonaev almobl-transport almobl-kurylys almobl-kasipkerlik almobl-auyl almobl-economy almobl-zher almobl-til almobl-tourism almobl-tabigat almobl-energy almobl-saulet almobl-social almobl-densaulyk almobl-sayasat almobl-bilim almobl-karzhy almobl-cultura-arhiv almobl-sport almobl-enbek almobl-din almobl-veterinaria almobl-memleket-saulet zhetysu-zher-paidalanu-udalen almobl-satyp-alu almobl-tehnologiya,NOTIFICATION,Ескерту,Оповещения,https://www.gov.kz/memleket/entities/almobl/activities/47791?lang=ru,
 2148,kostanay,ALERTS,ЕСКЕРТУЛЕР,ОПОВЕЩЕНИЯ,https://www.gov.kz/memleket/entities/kostanay/activities/48020?lang=ru,
 2154,kostanai-rudnyi-kalasy-akimat,Alerts,Ескертулер,Оповещания,https://www.gov.kz/memleket/entities/kostanai-rudnyi-kalasy-akimat/activities/48130?lang=ru,
-2175,bko-bokeyorda,NOTIFICATION,ҚҰЛАҚТАНДЫРУ,ОПОВЕЩЕНИЕ,https://www.gov.kz/memleket/entities/bko-bokeyorda/press/article/details/160630?lang=ru,
+2175,bko-bokeyorda,NOTIFICATION,ҚҰЛАҚТАНДЫРУ,ОПОВЕЩЕНИЕ,https://www.gov.kz/memleket/entities/bko-bokeyorda/press/article/details/162713?lang=ru,
 2197,abay-kokpekti-district,Alerts,ЕСКЕРТУЛЕР,ОПОВЕЩЕНИЯ,https://www.gov.kz/memleket/entities/abay-kokpekti-district/activities/50890?lang=ru,
 2189,bko-karatobe,NOTICE,ҚҰЛАҚТАНДЫРУ,ОПОВЕЩЕНИЕ,,/memleket/entities/bko-karatobe/press/article/details/160732?lang=ru
 2217,abay-semey,ALERTS,ЕСКЕРТУЛЕР,ОПОВЕЩЕНИЯ,https://www.gov.kz/memleket/entities/abay-semey/activities/50911?lang=ru,
@@ -444,7 +444,7 @@ id,projects(slug),title_en,title_kk,title_ru,external_link,internal_link
 2489,vko-samar,ALERTS,ЕСКЕРТУЛЕР,ОПОВЕЩЕНИЯ,https://www.gov.kz/memleket/entities/vko-samar/activities/50887?lang=ru,
 2491,vko-zaysan,Alerts,Ескертулер,Оповещения,https://www.gov.kz/memleket/entities/vko-zaysan/activities/51272?lang=ru,
 1962,kyzylorda,Reception center of citizens,Азаматтарды қабылдау орталығы,Центр приема граждан,,/memleket/entities/kyzylorda/press/article/details/144035?lang=ru
-2509,zhetysu-digital,The Center for the reception of citizens,Азаматтарды қабылдау орталығы,Центра приема граждан,https://www.gov.kz/memleket/entities/zhetysu-oblysy/press/article/details/144256,
+2509,zhetysu-digital,The Center for the reception of citizens,Азаматтарды қабылдау орталығы,Центр приема граждан,https://www.gov.kz/memleket/entities/zhetysu-oblysy/press/article/details/144256,
 1077,economy-abay,"State usuluga Provision of social support measures to specialists in the field of healthcare, education, social security, culture, sports and agro-industrial complex, civil servants of the offices of akims of villages, settlements, rural districts who arrived to work and live in rural settlements","Ауылдық елді мекендерге жұмыс істеу және тұру үшін келген ауыл, кент, ауылдық округ әкімдері аппараттарының мемлекеттік қызметшілеріне Денсаулық сақтау, білім беру, әлеуметтік қамсыздандыру, мәдениет, спорт және агроөнеркәсіптік кешен саласындағы мамандарға, әлеуметтік қолдау шараларын ұсыну мемлекеттік қызмет стандарты","Государственная усулуга Предоставление мер социальной поддержки специалистам в области здравоохранения, образования, социального обеспечения, культуры, спорта и агропромышленного комплекса, государственным служащим аппаратов акимов сел, поселков, сельских округов, прибывшим для работы и проживания в сельские населенные пункты",,https://egov.kz/cms/ru/services/for_unemployed/pass180_msh
 785,inf,,Мемлекеттік қызмет көрсету мәселелері бойынша ақпарат,Информация по вопросам оказания государственных услуг,,/memleket/entities/inf/press/article/details/32899
 680,akk,,Білім базасы,База знаний,,/memleket/entities/akk/press/article/details/26091
@@ -782,7 +782,7 @@ id,projects(slug),title_en,title_kk,title_ru,external_link,internal_link
 2210,bko-zhanibek,,ҚҰЛАҚТАНДЫРУ,ОПОВЕЩЕНИЕ,,/memleket/entities/bko-zhanibek/press/article/details/160663?lang=ru
 2213,aktobe-kargala,,ЕСКЕРТУЛЕР,ОПОВЕЩЕНИЯ,,/memleket/entities/aktobe/activities/50297
 2215,aktobe-baiganin,,ЕСКЕРТУЛЕР,ОПОВЕЩЕНИЯ,,/memleket/entities/aktobe/activities/50297
-2216,bko-kaztalovka,,ҚҰЛАҚТАНДЫРУ,ОПОВЕЩЕНИЕ,,https://www.gov.kz/memleket/entities/bko-kaztalovka/press/article/details/161966?directionId=_16928&lang=ru
+2216,bko-kaztalovka,,ҚҰЛАҚТАНДЫРУ,ОПОВЕЩЕНИЕ,,/memleket/entities/bko-kaztalovka/press/article/details/162049?lang=ru
 2220,kyzylorda kyzylorda-aral kyzylorda-kazaly kyzylorda-karmakshy kyzylorda-shieli kyzylorda-zhanakorgan kyzylorda-syrdarya kyzylorda-zhalagash kyzylorda-kzo kyzylorda-cultura-arhiv kyzylorda-bilim kyzylorda-pravstat kyzylorda-transport kyzylorda-energy kyzylorda-saulet kyzylorda-tabigat kyzylorda-auyl kyzylorda-densaulyk kyzylorda-economy kyzylorda-kasipkerlik kyzylorda-social kyzylorda-sayasat kyzylorda-satyp-alu kyzylorda-memleket-saulet kyzylorda-veterinaria kyzylorda-din kyzylorda-sport kyzylorda-zhumyldyru,,Ескерту,Оповещения,,/memleket/entities/kyzylorda/activities/51007
 2223,bko-akzhaik,,ҚҰЛАҚТАНДЫРУ,ОПОВЕЩЕНИЕ,,/memleket/entities/bko-akzhaik/press/article/details/160641?lang=ru
 2226,abay-boroduliha-dmitriev,,ЕСКЕРТУ,ОПОВЕЩЕНИЕ,https://www.gov.kz/memleket/entities/abay-boroduliha-dmitriev/activities/50942?lang=ru,
@@ -874,7 +874,7 @@ id,projects(slug),title_en,title_kk,title_ru,external_link,internal_link
 2354,aqmola-arshaly,,Ескертулер,Оповещения,https://www.gov.kz/memleket/entities/aqmola-arshaly/activities/51039?lang=ru,
 2356,zhetysu-tekeli,,Ескертулер,Оповещения,https://www.gov.kz/memleket/entities/zhetysu-tekeli/activities/51101?lang=ru,
 2355,zhetysu-taldykorgan,,ҚҰЛАҚТАНДЫРУ,ОПОВЕЩЕНИЯ,https://www.gov.kz/memleket/entities/zhetysu-taldykorgan/activities/51097?lang=ru,
-2360,abay-zharma-belterek,,ЕСКЕРТУЛЕР,ОПОВЕЩЕНИЯ,ОПОВЕЩЕНИЯ,https://www.gov.kz/memleket/entities/abay-zharma-belterek/activities/48583?lang=ru
+2360,abay-zharma-belterek,,ЕСКЕРТУЛЕР,ОПОВЕЩЕНИЕ,ОПОВЕЩЕНИЕ,https://www.gov.kz/memleket/entities/abay-zharma-belterek/activities/48583?lang=ru
 2361,abay-urzhar-karatuma,,ЕСКЕРТУ,ОПОВЕЩЕНИЯ,https://www.gov.kz/memleket/entities/abay-urzhar-karatuma/activities/51093?lang=ru,
 2358,abay-semey-novobazhenovo,,Ескертулер,Оповещения,https://www.gov.kz/memleket/entities/abay-semey-novobazhenovo/activities/51095,
 2366,zhetysu-koksu,,ҚҰЛАҚТАНДЫРУ,ОПОВЕЩЕНИЯ,https://www.gov.kz/memleket/entities/zhetysu-koksu/activities/51138?lang=ru,
@@ -949,7 +949,7 @@ id,projects(slug),title_en,title_kk,title_ru,external_link,internal_link
 2446,abay-zharma-aqzhal,,ЕСКЕРТУЛЕР,ОПОВЕЩЕНИЯ,https://www.gov.kz/memleket/entities/abay-zharma-aqzhal/activities/51295?lang=ru,
 2447,abay-urzhar-zhanatylek,,ЕСКЕРТУЛЕР,ОПОВЕЩЕНИЕ,https://www.gov.kz/memleket/entities/abay-urzhar-zhanatylek/activities/51312?lang=ru,
 2448,abay-urzhar-altynshoky,,ЕСКЕРТУЛЕР,ОПОВЕЩЕНИЯ,https://www.gov.kz/memleket/entities/aktobe/activities/50297?lang=ru,
-2449,zhetysu-panfilov,,ҚҰЛАҚТАНДЫРУ,ОПОВЕЩЕНИЕ,,
+2449,zhetysu-panfilov,,ҚҰЛАҚТАНДЫРУ,ОПОВЕЩЕНИЕ,https://www.gov.kz/memleket/entities/undefined,
 2451,abay-urzhar-karabuta,,Ескертулер,Оповещение,https://www.gov.kz/memleket/entities/abay-urzhar-karabuta/activities/51330?lang=ru,
 2452,abay-urzhar-kokterek,,ЕСКЕРТУ,ОПОВЕЩЕНИЯ,https://www.gov.kz/memleket/entities/abay-urzhar-kokterek/activities/51338?lang=ru,
 2453,abay-boroduliha-novodvor,,Ескертулер,Оповещения,https://www.gov.kz/memleket/entities/abay-boroduliha-novodvor/activities/51339?lang=ru,
@@ -963,7 +963,7 @@ id,projects(slug),title_en,title_kk,title_ru,external_link,internal_link
 2465,atyrau,,Ескертулер,Оповещения,https://www.gov.kz/memleket/entities/atyrau/activities/51402?lang=ru,
 2466,vko-oskemen,,ЕСКЕРТУЛЕР,ОПОВЕЩЕНИЯ,,/memleket/entities/vko-oskemen/activities/51400
 2463,abay-zharma-birlik,,Ескертулер,Оповещения,https://www.gov.kz/memleket/entities/abay-zharma-birlik/activities/51153?lang=ru,
-2468,sko-timiryazev,,Солтүстік Қазақстан облысы Тимирязев ауданы бойынша ескертулер,Оповещение по Тимирязевскому району Северо-Казахстанской области,,https://www.gov.kz/memleket/entities/sko-timiryazev/activities/51403?lang=ru
+2468,sko-timiryazev,,Солтүстік Қазақстан облысы Тимирязев ауданы бойынша ескертулер,Оповещение по Тимирязевскому району Северо-Казахстанской области,,/memleket/entities/sko-timiryazev/documents/details/631345
 2461,abay-zharma-zharyk,,Ескерту,Оповещения,https://www.gov.kz/memleket/entities/abay-zharma-zharyk/activities/51331?lang=ru,
 2470,akimat-atyrau,,Хабарлама,Оповещения,https://www.gov.kz/memleket/entities/akimat-atyrau/activities/51413?lang=ru,
 2471,atyrau-inder,,Хабарлама,Оповещения,https://www.gov.kz/memleket/entities/atyrau-inder/activities/51415?lang=ru,
@@ -1011,6 +1011,14 @@ id,projects(slug),title_en,title_kk,title_ru,external_link,internal_link
 2524,abay-boroduliha-peremenov,,Ескертулер,,https://www.gov.kz/memleket/entities/abay-boroduliha-peremenov/activities/51965?lang=kk,
 2525,abay-urzhar-zhogargyeginsu,,Ескертулер,Оповещания,https://www.gov.kz/memleket/entities/abay-urzhar-zhogargyeginsu/activities/51057,
 2526,abay-zharma-shalabai,,Ескертулер,Оповещения,https://www.gov.kz/memleket/entities/abay-zharma-shalabai/activities/48570?lang=ru,
+2527,abay-urzhar-koldenen,,Ескертулер,Оповещения,https://www.gov.kz/memleket/entities/abay-urzhar-koldenen/activities/52053?lang=ru,
+2450,abay-urzhar-koktal,,ЕСКЕРТУЛЕР,ОПОВЕЩЕНИЯ,https://www.gov.kz/memleket/entities/abay-urzhar-koktal/activities/52085?lang=ru,
+2534,abay-urzhar-keldymurat,,ECКЕРТУЛЕР,ОПОВЕЩЕНИЕ,https://www.gov.kz/memleket/entities/abay-urzhar-keldymurat/activities/52235?lang=ru,
+2536,zhetysu-sarkan-sarkant,,Құлақтандыру,Оповешения,https://www.gov.kz/memleket/entities/zhetysu-sarkan-sarkant/activities/52274?lang=kk,
+2537,abay-zharma-birlikshil,,Ескертулер,Оповещение,https://www.gov.kz/memleket/entities/abay-zharma-birlikshil/activities/48693?lang=ru,
+2539,zhetysu-eskeldy,,ҚҰРЫЛЫМ,СТРУКТУРА,https://www.gov.kz/memleket/entities/zhetysu-eskeldy/about/structure?lang=ru,
+2535,abay-zharma-qyzylagash,,ЕСКЕРТУ,ОПОВЕЩЕНИЕ,,https://www.gov.kz/memleket/entities/abay-zharma-qyzylagash/activities/52045?lang=ru
+2540,bko-zhanibek,,Аудан тұрғындары үшін АҚПАРАТ,ИНФОРМАЦИЯ для жителей района,,/memleket/entities/bko-zhanibek/press/article/details/162790?lang=ru
 2122,aqmola-astrahan-pervomai,,Соттылығының болуы немесе болмауы туралы анықтама беру,Выдача справки о наличии либо отсутствии судимости,https://www.youtube.com/watch?v=44Zc1ezvW_M,
 2123,aqmola-astrahan-novocherkassk,,Соттылығының болуы немесе болмауы туралы анықтама беру,Выдача справки о наличии либо отсуствии судимости на портале EGOV.KZ,https://www.youtube.com/watch?v=44Zc1ezvW_M,
 1802,prokuror,,Заңдарды бірге жақсартамыз,Улучшим законы вместе,,/memleket/entities/prokuror/laws/1?lang=ru
@@ -1065,6 +1073,9 @@ id,projects(slug),title_en,title_kk,title_ru,external_link,internal_link
 2417,aqmola-burabay,,,Оповещение,,/memleket/entities/aqmola-burabay/press/article/details/160979
 2457,aqmola-zhaksy-belovodskoe,,,ОПОВЕЩЕНИЯ,,/memleket/entities/aqmola-zhaksy-belovodskoe/activities/51368
 2492,vko-katon-karagay-soldatovo,,,,https://www.gov.kz/memleket/entities/akimvko/activities/51182?lang=ru,
+2528,abay-zharma-bozhegur,,,ОПОВЕЩЕНИЯ,https://www.gov.kz/memleket/entities/abay-zharma-bozhegur/activities/52068?lang=ru,
+2529,abay-zharma-qapanbulaq,,,ОПОВЕЩЕНИЕ,https://www.gov.kz/memleket/entities/abay-zharma-qapanbulaq/activities/51389?lang=ru,
+2533,abay-zharma-arshaly,,,ОПОВЕЩЕНИЕ,https://www.gov.kz/memleket/entities/abay-zharma-arshaly/activities/52222?lang=ru,
 2167,abay-urzhar-altynshoky,,,,,
 983,test,,,Социальное предпринимательство,,/memleket/entities/test/press/article/details/46153
 2120,vko-kurchum-markakol,,,Мемлекеттік көрсетілетін қызмет,https://adilet.zan.kz/rus/docs/V1600013652,
